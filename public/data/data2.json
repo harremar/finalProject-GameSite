@@ -1,0 +1,32 @@
+{
+  "XboxGames": [
+    {
+      "id": 4,
+      "gameName": "Halo Infinite",
+      "gameDescription": "When all hope is lost and humanity's fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he's ever faced. Step inside the armor of humanity's greatest hero to experience an epic adventure and explore the massive scale of the Halo ring",
+      "gamePrice": "$59.99",
+      "gameImageName": "halo-1.jpeg"
+    },
+    {
+      "id": 5,
+      "gameName": "Forza Horizon 5",
+      "gameDescription": "Forza Horizon 5 is a racing video game set in an open world environment based in a fictional representation of Mexico. The game has the largest map in the entire Forza Horizon series, being 50% larger than its predecessor",
+      "gamePrice": "$59.99",
+      "gameImageName": "fh5-1.jpeg"
+    },
+    {
+      "id": 6,
+      "gameName": "Gears of War",
+      "gameDescription": "With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera - herself. Starting November 10, take your character and weapon skins into new playthroughs and enjoy bonus difficulties and modifiers",
+      "gamePrice": "$59.99",
+      "gameImageName": "gears-1.jpeg"
+    },
+    {
+      "id": 7,
+      "gameName": "Grounded",
+      "gameDescription": "The world is a vast, beautiful and dangerous place - especially when you have been shrunk to the size of an ant. Can you thrive alongside the hordes of giant insects, fighting to survive the perils of the backyard?",
+      "gamePrice": "$29.99",
+      "gameImageName": "grounded-4.jpeg"
+    }
+  ]
+}

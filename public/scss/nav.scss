@@ -1,0 +1,407 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// THIS IS THE MAIN NAVIGATION HOLDER
+header {
+  width: 100%;
+  min-height: 60px;
+  background-color: white;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  // PRIMARY CONTAINS HAMBUGER MENU, LOGO, LINKS, AND ICONS
+  .primary-nav {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    transition: 0.3s;
+
+    // HAMBUGER MENU IS NOT DISPLAYED
+    .hamburger {
+      display: none;
+      position: block;
+      left: 20px;
+    }
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3.2px;
+      border-radius: 10px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: black;
+    }
+    // LINKS ARE DISPLAYED IN THE MIDDLE
+    .links {
+      width: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      a {
+        font-family: poppinsR;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: $site-red;
+        cursor: pointer;
+      }
+    }
+
+    a {
+      .logo {
+        width: 200px;
+        height: 50px;
+        h1 {
+          font-size: 44px;
+          font-family: impactFont;
+          color: black;
+        }
+        h1 span {
+          color: $site-red;
+        }
+      }
+      .logo:hover {
+        cursor: pointer;
+      }
+    }
+
+    // LINK ICONS ARE DISPLAYS ON THE RIGHT
+    .nav-tabs {
+      width: 110px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 60px;
+      // background-color: red;
+      padding: 5px;
+      .profile {
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/iconmonstr-user-6.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .profile:hover {
+        cursor: pointer;
+      }
+      .signout {
+        width: 55px;
+        height: 30px;
+        border: #222 solid 2px;
+
+        font-family: PoppinsR;
+        font-size: 10px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 7px;
+        display: none;
+      }
+      .signout:hover{
+        cursor: pointer;
+        transition: 0.3s;
+        border: red solid 2px;
+        color: red;
+
+      }
+      .cart {
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/iconmonstr-shopping-cart-2.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .circleCount {
+          width: 18px;
+          height: 18px;
+          background-color: black;
+          display: none;
+          border-radius: 20px;
+          position: absolute;
+          right: -8px;
+          top: -5px;
+          // display: none;
+          color: white;
+          font-family: poppinsR;
+          text-align: center;
+          padding-bottom: 20px;
+          padding-left: 5px;
+          font-size: 14px;
+        }
+      }
+      .cart:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  // HOLDS LINKS THAT ARE DISPLAYED ON SMALLER SCREEN
+  .secondary-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    display: none;
+    transition: 0.3s;
+
+    .nav-menu {
+      ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          a {
+            margin-top: 16px;
+            height: 40px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: $site-black;
+            font-family: candara;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+          a:hover {
+            color: $site-red;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  header {
+    min-height: 60px;
+    .secondary-nav {
+      .nav-menu {
+        .disappear {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    min-height: 60px;
+    .primary-nav {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      justify-content: none;
+      // SOME LINK ICONS DISAPPEAR
+      .nav-tabs {
+        width: 80px;
+        // background-color: red;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        
+        .signout {
+          width: 40px;
+          height: 24px;
+          font-size: 7px;
+          margin-right: 10px;
+        }
+        .cart {
+          width: 22px;
+          height: 24px;
+        }
+      }
+      // HAMBUGER IS DISPLAYED
+      .hamburger {
+        display: block;
+        padding-right: 40px;
+      }
+      // LINKS IN MAIN NAV DISAPPEAR
+      .links {
+        display: none;
+      }
+      a {
+        margin: 0 auto;
+        .logo {
+          width: 116px;
+          height: 30px;
+          margin-left: 120px;
+          margin: 0 auto;
+          h1 {
+            font-size: 34px;
+            // background-color: magenta;
+          }
+        }
+      }
+    }
+    // LINKS IN SECOND NAV APPEAR
+    .secondary-nav {
+      display: block;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    min-height: 60px;
+    .secondary-nav {
+      padding-top: 10px;
+      .nav-menu {
+        min-height: 150px;
+
+        ul {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          li {
+            a {
+              padding: 10px 20px;
+              text-decoration: none;
+              color: #111;
+              font-family: candara;
+              font-size: 20px;
+              color: black;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              margin-top: 0;
+            }
+            a:hover {
+              color: $site-red;
+              // background-color: #fafafa;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    // MENU IS OFF
+    .nav-menu {
+      display: none;
+      top: 100px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+
+      ul {
+        flex-direction: column;
+        li {
+          margin-bottom: 5px;
+          width: 100%;
+        }
+      }
+    }
+
+    // MENU IS ON
+    .nav-menu.active {
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .nav-item {
+      margin: 2.5rem 0;
+    }
+
+    // CHANGING OF HAMBUGER ICON TO X
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+.dropbtn {
+  background-color: white;
+  // color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  font-size: 20px;
+}
+
+/* Dropdown button on hover and focus */
+/* note: no spaces between class and argument*/
+.dropbtn:hover,
+.dropbtn:focus {
+  color: red;
+  transition: 0.3s;
+}
+
+/* The container <div> - positions the dropdown content */
+.dropdown {
+  position: relative;
+  /* use inline-block to apply width and height properties to elements*/
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  /* min-width: 160px; */
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* specify the stacking order of the elements */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+/* Show the dropdown menu and useJavaScript to add this class to the .dropdown-content container when user clicks on the button */
+.show {
+  display: block;
+}

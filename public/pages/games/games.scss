@@ -1,0 +1,179 @@
+.games{
+    width: 100%;
+    min-height: 500px;
+    margin-top: 100px;
+    // background-color: #444;
+    .content4 {
+        width: 100%;
+        min-height: 200px;
+        // background-color: #888;
+        h1{
+            padding-top: 20px;
+            text-align: center;
+            font-family: poppinsR;
+        }
+        .game-holder{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // background-color: #999;
+            width: 80%;
+            margin: 20px auto;
+            flex-wrap: wrap;
+
+            img{
+                width: 600px;
+                height: 300px;
+            }
+            .game-info{
+                width: 450px;
+                flex-wrap: wrap;
+                // background-color: #333;
+                p{
+                    font-family: poppinsL;
+                    font-size: 16px;
+                    padding: 10px;
+                }
+                h3{
+                    font-family: poppinsR;
+                    font-size: 20px;
+                    color: red;
+                }
+                .addtocart-btn{
+                    width: 180px;
+                    height: 50px;
+                    background-color: red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding-top: 10px;
+                    p{
+                        font-family: poppinsL;
+                        font-size: 16px;
+                        color: white;
+                        padding-top: 15px;
+                    }
+                }
+                .addtocart-btn:hover{
+                    cursor: pointer;
+                    transition: 0.3s;
+            background-color: rgb(207, 11, 11);
+                    
+                }
+            }
+        }
+        .game-pictures{
+            flex-wrap: wrap;
+            // display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-top: #ccc solid 2px;
+            border-bottom: #ccc solid 2px;
+
+            background-color: #eee;
+            padding: 30px;
+            // background-color: purple;
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+            
+            
+            img{
+                width: 402px;
+                height: 170px;
+                margin: 2px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1360px){
+    .games{
+        // background-color: tan;
+        .content4{
+            h1{
+
+            }
+            .game-holder{
+                justify-content: center;
+                .game-info{
+                    width: 500px;
+                    // background-color: red;
+                    text-align: center;
+                    .addtocart-btn{
+                        margin: 0 auto;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 750px){
+    .games{
+        // background-color: tan;
+        .content4{
+            h1{
+
+            }
+            .game-holder{
+                justify-content: center;
+                .game-info{
+                    width: 350px;
+                    // background-color: red;
+                    text-align: center;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                img{
+                    width: 350px;
+                    height: 180px;
+                }
+            }
+            .game-pictures{
+                img{
+                    width: 240px;
+                    height: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .games{
+        // background-color: tan;
+        margin-top: 70px;
+        .content4{
+            h1{
+
+            }
+            .game-holder{
+                justify-content: center;
+                .game-info{
+                    width: 290px;
+                    // background-color: red;
+                    text-align: center;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                img{
+                    width: 290px;
+                    height: 150px;
+                }
+            }
+            .game-pictures{
+                img{
+                    width: 240px;
+                    height: 130px;
+                }
+            }
+        }
+    }
+}

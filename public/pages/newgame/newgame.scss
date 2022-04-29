@@ -1,0 +1,109 @@
+.new-section{
+    // background-color: red;
+    margin-top: 100px;
+    .rel-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background-color: #333;
+        width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        
+        .release-info{
+            width: 400px;
+            .release-name{
+                font-family: poppinsR;
+                font-size: 30px;
+            }
+            .rel-desc{
+                font-family: poppinsL;
+                font-size: 16px;
+            }
+            .release-date{
+                font-family: poppinsR;
+                font-size: 16px;
+            }
+            .release-price{
+                font-family: poppinsR;
+                color: red;
+                font-size: 24px;
+            }
+        }
+        img{
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+        }
+    }
+
+    .new-img-gallery{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        flex-direction: column;
+        img{
+            width: 720px;
+            height: 320px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .new-section{
+        // background-color: pink;
+        margin-top: 50px;
+        .rel-container{
+            // background-color: blue;
+            width: 100%;
+            flex-direction: column;
+            .release-info{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .new-img-gallery{
+            img{
+                width: 480px;
+                height: 250px;
+                margin: 10px;
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .new-section{
+        // background-color: pink;
+        margin-top: 50px;
+        .rel-container{
+            // background-color: blue;
+            width: 100%;
+            flex-direction: column;
+            .release-info{
+                width: 100%;
+                text-align: center;
+                .release-name{
+                    font-size: 22px;
+                }
+                .rel-desc{
+                    font-size: 12px;
+                }
+                .release-date{
+                    font-size: 12px;
+                }
+                .release-price {
+                    font-size: 16px;
+                }
+            }
+        }
+        .new-img-gallery{
+            img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+}

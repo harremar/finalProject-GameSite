@@ -1,0 +1,59 @@
+// THE BASIC RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+// FONTS USED FOR THE SITE
+@font-face {
+  font-family: candaraBoldItalic;
+  src: url(fonts/Candara_Bold_Italic.ttf);
+}
+
+@font-face {
+  font-family: candaraBold;
+  src: url(fonts/Candara_Bold.ttf);
+}
+
+@font-face {
+  font-family: candaraItalic;
+  src: url(fonts/Candara_Italic.ttf);
+}
+
+@font-face {
+  font-family: candaraLight;
+  src: url(fonts/Candara_Light.ttf);
+}
+@font-face {
+  font-family: candara;
+  src: url(fonts/Candara.ttf);
+}
+
+@font-face {
+  font-family: impactFont;
+  src: url(fonts/impact.ttf);
+}
+
+@font-face {
+  font-family: poppinsL;
+  src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: poppinsR;
+  src: url(fonts/Poppins-Regular.ttf);
+}

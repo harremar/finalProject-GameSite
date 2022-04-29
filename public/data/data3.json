@@ -1,0 +1,32 @@
+{
+  "SonyGames": [
+    {
+      "id": 8,
+      "gameName": "God of War",
+      "gameDescription": "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+      "gamePrice": "$59.99",
+      "gameImageName": "gow-2.webp"
+    },
+    {
+      "id": 9,
+      "gameName": "Spiderman",
+      "gameDescription": "Marvel's Spider-Man is an open-world third-person action-adventure game, in which the player controls Peter Parker, under his superhero identity Spider-Man, through Manhattan, New York City to fight crime.",
+      "gamePrice": "$59.99",
+      "gameImageName": "spiderman-1.webp"
+    },
+    {
+      "id": 10,
+      "gameName": "Horizon Zero Dawn",
+      "gameDescription": "In an era where Machines roam the land and mankind is no longer the dominant species, a young hunter named Aloy embarks on a journey to discover her destiny. In a lush, post-apocalyptic world where nature has reclaimed the ruins of a forgotten civilization, pockets of humanity live on in primitive hunter-gatherer tribes. Their dominion over the new wilderness has been usurped by the Machines fearsome mechanical creatures of unknown origin.",
+      "gamePrice": "$29.99",
+      "gameImageName": "hzd-1.jpg"
+    },
+    {
+      "id": 11,
+      "gameName": "Uncharted 4",
+      "gameDescription": "On the hunt for Captain Henry Avery's long-lost treasure, Sam and Drake set off to find Libertalia, the pirate utopia deep in the forests of Madagascar. A Thief's End takes players on a journey around the globe, through jungle isles, far-flung cities and snow-capped peaks on the search for Avery's fortune.",
+      "gamePrice": "$29.99",
+      "gameImageName": "uncharted-1.jpeg"
+    }
+  ]
+}

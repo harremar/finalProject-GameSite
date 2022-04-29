@@ -1,0 +1,227 @@
+.home {
+    width: 100%;
+    min-height: 700px;
+    margin-top: 120px;
+    .redbar {
+        width: 90%;
+        height: 100px;
+        background-color: red;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        
+        h1{
+            font-family: poppinsR;
+            color: white;
+            font-size: 40px;
+            // background-color: black;
+            margin-top: 10px;
+        }
+        .redbar-btn {
+            width: 120px;
+            height: 50px;
+            border: solid 2px rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            font-family: poppinsR;
+        }
+        .redbar-btn:hover {
+            
+            background-color: $site-darkred;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+    .blackbar {
+        width: 90%;
+        height: 85px;
+        background-color: black;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        h1{
+            font-family: poppinsR;
+            color: white;
+            font-size: 18px;
+            // background-color: black;
+            margin-top: 20px;
+        }
+        img {
+            width: 400px;
+            height: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            // margin-right: 100px;
+        }
+        .blackbar-btn {
+            width: 120px;
+            height: 50px;
+            border: solid 2px rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            font-family: poppinsR;
+        }
+        .blackbar-btn:hover {
+        
+            background-color: white;
+          
+            color: black;
+
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    .hero {
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        background-image:linear-gradient(
+            rgba(0, 0,0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ), url(../../images/mario-kart-8-deluxe.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-gameholder{
+        width: 90%;
+        min-height: 400px;
+        margin: 10px auto;
+        margin-bottom: 50px;
+        // background-color: blue;
+        display: flex;
+        align-items: center;
+       
+        .home-game {
+            // background-color: red;
+            width: 680px;
+            height: 400px;
+            
+            img{
+                width: 100%;
+                height: 350px;
+                background-color: black;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                font-family: poppinsR;
+                font-size: 16px;
+                margin: 0;
+                // padding-top: 10px;
+            }
+            p{
+                font-family: poppinsL;
+                font-size: 12px;
+                margin:0;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .home{
+        margin-top: 80px;
+        .redbar{
+            h1{
+                font-size: 26px;
+            }
+        }
+        .blackbar{
+            h1{
+            font-size: 14px;
+            }
+            img{
+                width: 200px;
+
+            }
+            .blackbar-btn{
+
+            }
+        }
+        .hero{
+            height: 400px;
+        }
+        .home-gameholder{
+            flex-wrap: wrap;
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+
+            .home-game{
+                margin: 20px 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .home{
+        
+        .redbar{
+            flex-direction: column;
+            min-height: 80px;
+            
+            padding-bottom: 10px;
+            h1{
+                font-size: 22px;
+                margin: 0;
+            }
+            .redbar-btn{
+                height: 30px;
+            }
+        }
+        .blackbar{
+            flex-direction: column;
+            height: 120px;
+            h1{
+            font-size: 8px;
+            margin: 10px 0 0 0;
+            }
+            img{
+                width: 200px;
+
+            }
+            .blackbar-btn{
+            height: 30px;
+            margin-bottom: 10px;
+            }
+        }
+        .hero{
+            height: 300px;
+        }
+        .home-gameholder{
+            flex-wrap: wrap;
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+
+            .home-game{
+                margin: 20px 0;
+                width: 100%;
+                height: 280px;
+                img{
+                    height: 230px;
+                }
+            }
+        }
+    
+    }
+}

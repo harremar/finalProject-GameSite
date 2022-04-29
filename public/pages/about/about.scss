@@ -1,0 +1,292 @@
+.about {
+    width: 90%;
+    min-height: 800px;
+    margin: 130px auto 40px auto;
+    
+    // background-color: #eee;
+
+    .about-overview {
+        padding: 20px;
+        width: 100%;
+        min-height: 200px;
+        
+        // background-color: #333;
+        h1{
+            font-family: impactFont;
+            font-size: 60px;
+        }
+        p{
+            font-family: poppinsL;
+            font-size: 20px;
+        }
+    }
+    .about-quote{
+        width: 100%;
+        min-height: 130px;
+        background-color: $site-red;
+        padding: 20px 40px;
+        h2{
+            color: white;
+            font-family: poppinsR;
+            font-size: 20px;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h4{
+            color: white;
+            font-family: poppinsL;
+            font-size: 14px;
+            text-align: center;
+
+        }
+    }
+    .about-creators {
+        width: 100%;
+        min-height: 350px;
+        // background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        .creator-holder{
+            width: 270px;
+            height: 350px;
+            margin: 20px;
+            img{
+                width: 270px;
+                height: 270px;
+                padding: 10px;
+                border: black solid 6px;
+                border-radius: 200px;
+                background-color: white;
+            }
+            .creator-bio{
+                margin-top: 10px;
+                h1{
+                    font-family: poppinsR;
+                    color: $site-red;
+                    font-size: 24px;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                }
+                p{
+                    font-family: poppinsL;
+                    color: black;
+                    font-size: 14px;
+                    text-align: center;
+                  
+                }
+            }
+        }
+    }
+    .moreabout {
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        // HOLDS PARAGRAPH AND BUTTON
+        .aboutcontent {
+          width: 50%;
+          padding: 65px 20px;
+          padding-left: 50px;
+          h1 {
+            font-size: 52px;
+            font-family: impactFont;
+          }
+          p {
+            font-size: 18px;
+            font-family: poppinsR;
+            max-width: 520px;
+          }
+          // ABOUT BUTTON
+          .aboutbtn {
+            margin-top: 20px;
+            width: 150px;
+            height: 40px;
+            background-color: $site-red;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            transition: 0.3s;
+            box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.2);
+            h4 {
+              font-size: 20px;
+              font-family: poppinsR;
+              color: white;
+              padding-top: 12px;
+            }
+          }
+          .aboutbtn:hover {
+            background-color: $site-darkred;
+            cursor: pointer;
+          }
+        }
+        // HOLDS THE ABOUT IMAGE
+        .aboutimageholder {
+          width: 50%;
+          height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          .aboutimage {
+            width: 350px;
+            height: 350px;
+            border-radius: 100%;
+            background-image: url(../../images/aboutgrouppic.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: $site-red solid 5px;
+          }
+        }
+      }
+}
+@media (max-width: 1000px) {
+    .about{
+        margin-top: 70px;
+        .moreabout {
+           
+            .aboutcontent {
+              padding-top: 100px;
+              margin-right: 20px;
+              h1 {
+                font-size: 40px;
+              }
+              p {
+                font-size: 16px;
+              }
+            }
+            .aboutimageholder {
+              .aboutimage {
+                width: 320px;
+                height: 320px;
+              }
+            }
+          }
+    }
+}
+
+@media (max-width: 600px) {
+.about{
+    width: 100%;
+    // background-color: blue;
+    margin-top: 70px;
+    .about-overview{
+        // background-color: red;
+        margin-top: 0;
+        h1{
+            font-size: 36px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .about-quote{
+        
+        h2{
+            font-size: 14px;
+            width: 95%;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-size: 10px;
+            margin: 0;
+        }
+    }
+    .about-creators{
+        .creator-holder{
+            width: 220px;
+            height: 300px;
+            margin-bottom: 20px;
+            img{
+                width: 220px;
+                height: 220px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .moreabout {
+        margin-top: 40px;
+        flex-direction: column;
+        display: flex;
+        .aboutcontent {
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px;
+          justify-content: center;
+          align-items: center;
+          min-height: 260px;
+    
+          h1 {
+            font-size: 36px;
+            margin: 0 auto;
+            text-align: center;
+          }
+          p {
+            font-size: 12px;
+            text-align: center;
+            margin: 20px auto;
+          }
+          .aboutbtn {
+            margin: 0 auto;
+            h4{
+                font-size: 14px;
+                padding-top: 16px;
+            }
+          }
+        }
+        .aboutimageholder {
+          width: 100%;
+          max-height: 300px;
+          .aboutimage {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+}
+}
+
+@media (max-width: 440px){
+    .about{
+        .moreabout {
+            flex-direction: column;
+            display: flex;
+            .aboutcontent {
+              width: 100%;
+              margin: 0 auto;
+              padding: 20px;
+              text-align: left;
+              justify-content: center;
+              align-items: center;
+              min-height: 260px;
+        
+              h1 {
+                font-size: 36px;
+                text-align: left;
+              }
+              p {
+                font-size: 12px;
+                text-align: left;
+              }
+              .aboutbtn {
+                margin: 0;
+              }
+            }
+            .aboutimageholder {
+              width: 100%;
+              max-height: 300px;
+        
+              .aboutimage {
+                width: 250px;
+                height: 250px;
+              }
+            }
+          }
+    }
+}
