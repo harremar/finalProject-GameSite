@@ -65,6 +65,17 @@ function addCart() {
     alert("Need to be logged in");
   }
 }
+function checkOut() {
+  if (loggedIn == true && cartNumbers != 0) {
+    alert("you bought " + cartNumbers + " games!");
+    circle.style.display = "none";
+    cartNumbers = 0;
+  } else if (loggedIn == false) {
+    alert("you need to be signed in");
+  } else if (cartNumbers == 0) {
+    alert("there is nothing in the cart");
+  }
+}
 
 function initListeners() {
   $(window).on("hashchange", route);
@@ -448,7 +459,6 @@ function getData() {
       console.log("File", error.statusText);
     });
 }
-function loadGamePage() {}
 
 $(document).ready(function () {
   initListeners();
